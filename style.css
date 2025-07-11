@@ -1,0 +1,157 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #c0392b;
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e74c3c;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 10px 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #e74c3c;
+  border-radius: 5px;
+}
+
+/* Contenido */
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content h2 {
+  color: #c0392b;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Menú */
+.menu-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-3px);
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  color: #e74c3c;
+}
+
+/* Botón */
+#toggleMenu {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+#toggleMenu:hover {
+  background-color: #a93226;
+}
+
+/* Contacto */
+#contacto p {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #c0392b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  #toggleMenu {
+    width: 100%;
+  }
+}
+#irArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#irArriba:hover {
+  background-color: #c0392b;
+}
